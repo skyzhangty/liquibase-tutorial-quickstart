@@ -97,9 +97,11 @@
 
                     </dbCreateStatements>
                     <dbDropStatements>
-                        DROP DATABASE "${db.liquibase.name}"; #--;
+
                         DROP USER "${db.liquibase.user.name}"; #--;
                         DROP USER "${db.liquibase.client.user.name}"; #--;
+
+                        DROP DATABASE "${db.liquibase.name}"; #--;
                     </dbDropStatements>
                     <dbSchemaScriptsDirectory><param>target/classes/com/waszczyk/db/schema</param></dbSchemaScriptsDirectory>
 
