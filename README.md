@@ -1,7 +1,7 @@
 liquibase-tutorial-quickstart
 =============================
 
-Commands:<br>
+Commands:
 liquibase --driver=oracle.jdbc.OracleDriver
       --classpath=\path\to\classes:jdbcdriver.jar
       --changeLogFile=com/example/db.changelog.xml
