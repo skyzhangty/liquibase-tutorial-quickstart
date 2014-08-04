@@ -5,22 +5,23 @@
 
 	<changeSet author="TW" id="1">
 		<comment>Initialization of database</comment>
-		<createTable schemaName="${db.liquibase.schema.name}" tableName="table1" tablespace="${db.liquibase.tablespace.tables}">
-			<column name="a" type="int8">
+		<createTable schemaName="${db.liquibase.schema.name}" tableName="products" tablespace="${db.liquibase.tablespace.tables}">
+            <column autoIncrement="true" name="product_no" type="bigserial">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="product_no" />
+            </column>
+            <column name="text" type="VARCHAR(255)">
 				<constraints nullable="false" />
 			</column>
-			<column name="b" type="VARCHAR(255)">
+			<column name="price" type="int8)">
 				<constraints nullable="false" />
 			</column>
 		</createTable>
 
-		<createTable schemaName="${db.liquibase.schema.name}" tableName="table2" tablespace="${db.liquibase.tablespace.tables}">
-			<column name="a_id" type="int8" />
-			<column name="b_id" type="int8" />
-			<column name="c_idn" type="VARCHAR(255)">
-				<constraints nullable="false" />
-			</column>
-            <column name="dd" type="VARCHAR(255)">
+		<createTable schemaName="${db.liquibase.schema.name}" tableName="orders" tablespace="${db.liquibase.tablespace.tables}">
+            <column autoIncrement="true" name="product_id" type="bigserial">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="order_id" />
+            </column>
+            <column name="quantity" type="int8">
                 <constraints nullable="false" />
             </column>
 		</createTable>

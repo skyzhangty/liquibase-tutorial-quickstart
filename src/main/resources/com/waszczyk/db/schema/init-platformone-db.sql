@@ -1,6 +1,7 @@
 --DROP SCHEMA "public"; #--;
 
 --http://www.postgresql.org/docs/7.4/static/ddl-constraints.html#DDL-CONSTRAINTS-FK#--;
+
 CREATE SCHEMA "${db.liquibase.schema.name}"; #--;
 ALTER SCHEMA "${db.liquibase.schema.name}" OWNER TO "${db.liquibase.user.name}"; #--;
 
