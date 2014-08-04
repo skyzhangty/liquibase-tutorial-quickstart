@@ -20,7 +20,9 @@
 			<column name="c_idn" type="VARCHAR(255)">
 				<constraints nullable="false" />
 			</column>
-
+            <column name="ddd" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
 		</createTable>
 	</changeSet>
 </databaseChangeLog>
