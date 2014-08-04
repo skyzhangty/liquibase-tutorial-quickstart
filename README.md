@@ -6,8 +6,8 @@ liquibase --driver=oracle.jdbc.OracleDriver
       --classpath=\path\to\classes:jdbcdriver.jar
       --changeLogFile=com/example/db.changelog.xml
       --url="jdbc:oracle:thin:@localhost:1521:XE"
-      --username=scott \
-      --password=tiger \
+      --username=scott
+      --password=tiger
       generateChangeLog
 
 
